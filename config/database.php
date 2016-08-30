@@ -25,9 +25,10 @@ return [
     | you may use many connections at once using the Database library.
     |
     */
-
+    /*
     'default' => env('DB_CONNECTION', 'pgsql'),
-
+    */
+    'default' => 'pgsql',
     /*
     |--------------------------------------------------------------------------
     | Database Connections
