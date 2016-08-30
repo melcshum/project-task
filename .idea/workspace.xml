@@ -38,8 +38,8 @@
       <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+            <state relative-caret-position="405">
+              <caret line="73" column="60" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -245,7 +245,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="84" />
+    <option name="x" value="-87" />
     <option name="y" value="23" />
     <option name="width" value="1605" />
     <option name="height" value="873" />
@@ -597,15 +597,15 @@
       <option name="presentableId" value="Default" />
       <updated>1472120368548</updated>
       <workItem from="1472120990421" duration="1783000" />
-      <workItem from="1472527417533" duration="12911000" />
+      <workItem from="1472527417533" duration="13238000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14694000" />
+    <option name="totallyTimeSpent" value="15021000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="84" y="23" width="1605" height="873" extended-state="0" />
+    <frame x="-87" y="23" width="1605" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1003,8 +1003,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        <state relative-caret-position="405">
+          <caret line="73" column="60" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
           <folding />
         </state>
       </provider>
