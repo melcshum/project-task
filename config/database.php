@@ -67,15 +67,14 @@ return [
         ],
 
         'pgsql' => [
-            'driver' => 'pgsql',
-            'host' => 'fkbfosywbshmhd',
-            'port' => '5432',
-            'database' => 'jwNJ3y72GlVT5nZ01npZ6Tesz9@ec2-54-243-203-87.compute-1.amazonaws.com',
-            'username' => env('DB_USERNAME', 'd6b0qjg3g1d34k'),
-            'password' => env('DB_PASSWORD', ''),
-            'charset' => 'utf8',
-            'prefix' => '',
-            'schema' => 'public',
+            'driver'   => 'pgsql',
+            'host'     => parse_url(getenv("DATABASE_URL"))["host"],
+            'database' => substr(parse_url(getenv("DATABASE_URL"))["path"], 1),
+            'username' => parse_url(getenv("DATABASE_URL"))["user"],
+            'password' => parse_url(getenv("DATABASE_URL"))["pass"],
+            'charset'  => 'utf8',
+            'prefix'   => '',
+            'schema'   => 'public',
         ],
 
     ],
