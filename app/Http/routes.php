@@ -40,3 +40,7 @@ Route::resource('projects',  'ProjectsController');
 // Route::resource('tasks', 'TasksController');
 
 Route::resource('projects.tasks', 'TasksController');
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');

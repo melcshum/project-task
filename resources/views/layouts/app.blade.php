@@ -48,8 +48,6 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/home') }}">Home</a></li>
-                    <li><a href="{{ url('/projects') }}">Projects</a></li>
-
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -73,22 +71,6 @@
             </div>
         </div>
     </nav>
-
-
-    @if (Session::has('message'))
-        <div class="flash alert-info">
-            <p>{{ Session::get('message') }}</p>
-        </div>
-    @endif
-
-    @if ($errors->any())
-        <div class='flash alert-danger'>
-            @foreach ( $errors->all() as $error )
-                <p>{{ $error }}</p>
-            @endforeach
-        </div>
-    @endif
-
 
     @yield('content')
 
