@@ -1,20 +1,11 @@
 <IfModule mod_rewrite.c>
-    <IfModule mod_negotiation.c>
-        Options -MultiViews
-    </IfModule>
+  Options +FollowSymlinks
 
-    RewriteEngine On
+  Options +SymLinksIfOwnerMatch
 
-    # Redirect Trailing Slashes If Not A Folder...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)/$ https://cryptic-thicket-89890.herokuapp.com/$1 [L,R=301]
+  RewriteEngine On
 
-    # Handle Front Controller...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ index.php [L]
+  RewriteRule ^(.*)$ /public/$1 [L]
 
-    # Handle Authorization Header
-    RewriteCond %{HTTP:Authorization} .
-    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
 </IfModule>
